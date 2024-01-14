@@ -18,8 +18,8 @@ class PrescriptionParser(MedicalDocParser):
     def get_field(self, field_name):
         pattern_dict = {
             'patient_name': {'pattern': 'Name:(.*)Date', 'flags': 0},
-            'patient_address': {'pattern': 'Address:(.*)\n', 'flags': 0},
-            'medicines': {'pattern': 'Address[^\n]*(.*)Directions', 'flags': re.DOTALL},
+            'patient_address': {'pattern': 'Address:([^\n]*)', 'flags': 0},   #Address:([^\n]*)  #Address:(.*) \n
+            'medicines': {'pattern': 'Address:[^\n]*(.*)Directions', 'flags': re.DOTALL},
             'directions': {'pattern': 'Directions:(.*)Refill', 'flags': re.DOTALL},
             'refills': {'pattern': 'Refill:(.*)times', 'flags': 0},
         }
@@ -48,4 +48,7 @@ Lialda - take 2 pill everyday for 1 month
 Refill: 3 times
 '''
     pp = PrescriptionParser(document_text)
+    # parsed_result = pp.parse()
+    # for key, value in parsed_result.items():
+    #     print(f'{key}: {value}')
     print(pp.parse())
