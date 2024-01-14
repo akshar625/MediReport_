@@ -17,7 +17,7 @@ This project aims to streamline the process of extracting information from scann
 
 # Workflow
 
-1. ** PDF Conversion:** Scanned PDFs are converted to JPEG format using the PDFToImageConverter class.
+1. **PDF Conversion:** Scanned PDFs are converted to JPEG format using the PDFToImageConverter class.
 
 2. **Image Enhancement:** The ImageProcessor class enhances image quality through adaptive thresholding in OpenCV2.
 
