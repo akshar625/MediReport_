@@ -6,7 +6,7 @@ from parser_prescription import PrescriptionParser
 from parser_patient_details import PatientDetailsParser
 
 # POPPLER_PATH = r'C:\poppler-21.02.0\Library\bin'
-pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'
+pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
 
 
 def extract(file_path, file_format):
@@ -34,3 +34,5 @@ def extract(file_path, file_format):
 if __name__ == '__main__':
     data = extract('../resources/patient_details/pd_1.pdf', 'patient_details')
     print(data)
+
+
