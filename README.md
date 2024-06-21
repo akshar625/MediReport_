@@ -87,35 +87,34 @@ Edit tailwind.config.js to remove unused styles in production:
 ```  theme: {```
 ```    extend: {},```
  ``` },```
-  ````variants: {```
-    extend: {},
-  },
-  plugins: [],
-}````
-``
+  ```variants: {```
+    ```extend: {},```
+  ```},```
+  ```plugins: [],```
+```}```
+
 #### Include Tailwind in Your CSS
 
 Create a static/styles/tailwind.css file and add the following lines:
 
-``@tailwind base;
-@tailwind components;
-@tailwind utilities;
-``
+```@tailwind base;```
+```@tailwind components;```
+```@tailwind utilities;```
+
 
 #### Build Your CSS
 
 Add a script to your package.json to build your CSS:
 
-``{
-  "scripts": {
-    "build:css": "tailwindcss build static/styles/tailwind.css -o static/styles/main.css"
-  }
-}
-``
+```{```
+  ```"scripts": {```
+    ```"build:css": "tailwindcss build static/styles/tailwind.css -o static/styles/main.css"```
+  ```}```
+```}```
 
 #### Then run:
 
-``npm run build:css``
+```npm run build:css```
 
 #### Running the Application
 * Ensure the FastAPI server is running.
