@@ -52,12 +52,12 @@ bash
 ``git clone https://github.com/yourusername/medical-document-extraction.git
 cd medical-document-extraction``
 
-###Backend Setup
+### Backend Setup
 
-####Install Dependencies
+#### Install Dependencies
 ``pip install -r requirements.txt``
 
-####Set Up Tesseract
+#### Set Up Tesseract
 
 Ensure Tesseract OCR is installed and accessible. Set the pytesseract.pytesseract.tesseract_cmd to the path where Tesseract is installed in your environment. For example:
 
@@ -66,15 +66,15 @@ pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'
  or
 pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe' ``
 
-####Run the FastAPI Server
+#### Run the FastAPI Server
 
 ``uvicorn main:app --reload``
 
-####Create Tailwind Configuration File
+#### Create Tailwind Configuration File
 
 ``npx tailwindcss init``
 
-####Configure Tailwind
+#### Configure Tailwind
 Edit tailwind.config.js to remove unused styles in production:
 
 ``module.exports = {
@@ -89,7 +89,7 @@ Edit tailwind.config.js to remove unused styles in production:
   plugins: [],
 }
 ``
-####Include Tailwind in Your CSS
+#### Include Tailwind in Your CSS
 
 Create a static/styles/tailwind.css file and add the following lines:
 
@@ -98,7 +98,7 @@ Create a static/styles/tailwind.css file and add the following lines:
 @tailwind utilities;
 ``
 
-####Build Your CSS
+#### Build Your CSS
 
 Add a script to your package.json to build your CSS:
 
@@ -109,14 +109,14 @@ Add a script to your package.json to build your CSS:
 }
 ``
 
-####Then run:
+#### Then run:
 
 ``npm run build:css``
 
-####Running the Application
+#### Running the Application
 * Ensure the FastAPI server is running.
 * Open static/index.html in your web browser to use the frontend interface.
-####API Usage
+#### API Usage
 * Endpoint: /extract_from_doc
 * Method: POST
 *Form Parameters:
