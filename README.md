@@ -50,6 +50,7 @@ This project finds practical application in an insurance company, where employee
 
 bash
 ```git clone https://github.com/yourusername/medical-document-extraction.git```
+
 ```cd medical-document-extractionm ```
 
 ### Backend Setup
@@ -61,9 +62,12 @@ bash
 
 Ensure Tesseract OCR is installed and accessible. Set the pytesseract.pytesseract.tesseract_cmd to the path where Tesseract is installed in your environment. For example:
 
-```import pytesseract```
+```import pytesseract```  
+
 ```pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract' ```
+
  or
+
 ```pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe' ```
 
 #### Run the FastAPI Server
