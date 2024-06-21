@@ -62,7 +62,6 @@ bash
 
 Ensure Tesseract OCR is installed and accessible. Set the pytesseract.pytesseract.tesseract_cmd to the path where Tesseract is installed in your environment. For example:
 
-    import pytesseract
     pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'
 
  or
