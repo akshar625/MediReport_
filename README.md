@@ -15,15 +15,18 @@ This project aims to streamline the process of extracting information from scann
 
 * **main.py :** Utilizes FastAPI to develop the backend of the project, handling API calls for document type identification and information extraction.
 
+* **static:** Contains HTML, CSS (Tailwind CSS), and JavaScript files for the frontend.
+
+
 # Workflow
 
-1. **PDF Conversion:** Scanned PDFs are converted to JPEG format using the PDFToImageConverter class.
+1. **PDF Conversion:** Scanned PDFs are converted to JPEG format using the `PDFToImageConverter` class.
 
-2. **Image Enhancement:** The ImageProcessor class enhances image quality through adaptive thresholding in OpenCV2.
+2. **Image Enhancement:** The `ImageProcessor` class enhances image quality through adaptive thresholding in OpenCV2.
 
 3. **Text Extraction:** PyTesseract is employed to extract text from the processed images.
 
-4. **Data Parsing:** Two separate classes, PatientDetailsParser and PrescriptionParser, use distinct regular expressions to extract relevant information from the extracted text.
+4. **Data Parsing:** Two separate classes, `PatientDetailsParser` and `PrescriptionParser`, use distinct regular expressions to extract relevant information from the extracted text.
 
 5. **FastAPI Backend:** The main backend, main.py, utilizes FastAPI to handle API calls for document type identification and information extraction. Users specifies the document type (patient details or prescription) when sending a PDF file.
 
