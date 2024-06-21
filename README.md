@@ -86,12 +86,12 @@ Edit tailwind.config.js to remove unused styles in production:
 ```  darkMode: false, // or 'media' or 'class'```
 ```  theme: {```
 ```    extend: {},```
-  },
-  variants: {
+ ``` },```
+  ````variants: {```
     extend: {},
   },
   plugins: [],
-}
+}````
 ``
 #### Include Tailwind in Your CSS
 
