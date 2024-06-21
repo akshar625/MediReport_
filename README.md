@@ -48,6 +48,8 @@ This project finds practical application in an insurance company, where employee
 
 ### Clone the Repository
 
-```bash
-git clone https://github.com/yourusername/medical-document-extraction.git
-cd medical-document-extraction
+bash
+``git clone https://github.com/yourusername/medical-document-extraction.git
+cd medical-document-extraction``
+
+
