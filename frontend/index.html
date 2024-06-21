@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Extractor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 ">
+    <nav class="bg-purple-800 text-red-100 flex justify-between">
+        <div class ="flex">
+            <img src="Image.png" class="h-16 px-4 rounded-3xl cursor-pointer" alt="" srcset="">
+            <span class="text-xl flex items-center mx-0 font-semibold cursor-pointer ubuntu-sans-mono py-6">Report Data Extractor</span>
+        </div>
+    </nav>
+    <div class="flex items-center justify-center min-h-screen">
+    <div class="bg-white rounded-lg shadow-md p-8 max-w-md w-full">
+        <h1 class="text-2xl font-bold text-center mb-6">Document Extractor</h1>
+        <form id="uploadForm" class="space-y-6">
+            <div>
+                <label for="type" class="block text-sm font-medium text-gray-700 mb-2">Extraction Type:</label>
+                <select id="type" name="type" required class="block w-full py-2 px-4 border border-gray-300 bg-white rounded-md shadow-sm sm:text-sm">
+                    <option value="prescription">Prescription</option>
+                    <option value="patient_details">Patient Details</option>
+                </select>
+            </div>
+            <div>
+                <label for="file" class="block text-sm font-medium text-gray-700 mb-2">Upload PDF:</label>
+                <input type="file" id="file" name="file" accept=".pdf" required class="block w-full py-2 px-4 border border-gray-300 bg-white rounded-md shadow-sm  sm:text-sm">
+            </div>
+            <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-6 rounded-md shadow-sm hover:bg-indigo-700 ">Extract</button>
+        </form>
+
+        <div id="result" class="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-md"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
