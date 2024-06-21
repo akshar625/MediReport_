@@ -81,27 +81,27 @@ Ensure Tesseract OCR is installed and accessible. Set the pytesseract.pytesserac
 #### Configure Tailwind
 Edit tailwind.config.js to remove unused styles in production:
 
-```module.exports = {```
+    ```module.exports = {```
 
-```  purge: ['./static/**/*.html', './static/**/*.js'],```
+    ```  purge: ['./static/**/*.html', './static/**/*.js'],```
 
-```  darkMode: false, // or 'media' or 'class'```
+    ```  darkMode: false, // or 'media' or 'class'```
 
-```  theme: {```
+    ```  theme: {```
 
-```    extend: {},```
+    ```    extend: {},```
 
- ``` },```
+    ``` },```
  
-  ```variants: {```
+    ```variants: {```
   
     ```extend: {},```
   
-  ```},```
+     ```},```
   
-  ```plugins: [],```
+    ```plugins: [],```
 
-```}```
+    ```}```
 
 #### Include Tailwind in Your CSS
 
