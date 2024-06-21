@@ -81,56 +81,56 @@ Ensure Tesseract OCR is installed and accessible. Set the pytesseract.pytesserac
 #### Configure Tailwind
 Edit tailwind.config.js to remove unused styles in production:
 
-    ```module.exports = {```
+    module.exports = {
 
-    ```  purge: ['./static/**/*.html', './static/**/*.js'],```
+      purge: ['./static/**/*.html', './static/**/*.js'],
 
-    ```  darkMode: false, // or 'media' or 'class'```
+      darkMode: false, // or 'media' or 'class'
 
-    ```  theme: {```
+      theme: {
 
-    ```    extend: {},```
+        extend: {},
 
-    ``` },```
+     },
  
-    ```variants: {```
+    variants: {
   
-    ```extend: {},```
+    extend: {},
   
-     ```},```
+     },
   
-    ```plugins: [],```
+    plugins: [],
 
-    ```}```
+    }
 
 #### Include Tailwind in Your CSS
 
 Create a static/styles/tailwind.css file and add the following lines:
 
-```@tailwind base;```
+    @tailwind base;
 
-```@tailwind components;```
+    @tailwind components;
 
-```@tailwind utilities;```
+    @tailwind utilities;
 
 
 #### Build Your CSS
 
 Add a script to your package.json to build your CSS:
 
-```{```
+    {
 
-  ```"scripts": {```
+    "scripts": {
   
-    ```"build:css": "tailwindcss build static/styles/tailwind.css -o static/styles/main.css"```
+    "build:css": "tailwindcss build static/styles/tailwind.css -o static/styles/main.css"
  
-  ```}```
+    }
 
-```}```
+    }
 
 #### Then run:
 
-```npm run build:css```
+    npm run build:css
 
 #### Running the Application
 * Ensure the FastAPI server is running.
