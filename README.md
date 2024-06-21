@@ -28,7 +28,7 @@ This project aims to streamline the process of extracting information from scann
 
 4. **Data Parsing:** Two separate classes, `PatientDetailsParser` and `PrescriptionParser`, use distinct regular expressions to extract relevant information from the extracted text.
 
-5. **FastAPI Backend:** The main backend, main.py, utilizes FastAPI to handle API calls for document type identification and information extraction. Users specifies the document type (patient details or prescription) when sending a PDF file.
+5. **FastAPI Backend:** The main backend, `main.py`, utilizes FastAPI to handle API calls for document type identification and information extraction. Users specifies the document type (patient details or prescription) when sending a PDF file.
 
 6. **Frontend Integration:** The extracted information is sent to the frontend in JSON format for seamless integration into the company's database.
 
@@ -36,3 +36,18 @@ This project aims to streamline the process of extracting information from scann
 # Real-Life Use Case
 
 This project finds practical application in an insurance company, where employees often need to manually read and input information from scanned PDFs into the company database. By utilizing this project, the manual effort is significantly reduced. Employees can simply press a button in the frontend, triggering the automatic extraction of relevant information from the scanned documents. This not only saves time but also minimizes the chance of errors that may occur during manual data entry. The project enhances efficiency by eliminating the need to repeatedly type details from scanned copies, making the process more streamlined and user-friendly.
+
+## Installation and Setup
+
+### Prerequisites
+
+- Python 3.11
+- Pip (Python package installer)
+- Tesseract OCR (Ensure it's installed and accessible)
+- Node.js and npm (for building Tailwind CSS)
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/medical-document-extraction.git
+cd medical-document-extraction
